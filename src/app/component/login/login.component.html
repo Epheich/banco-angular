@@ -1,0 +1,19 @@
+<main class="main-main">
+  <h1 class="main-login__title">Iniciar sesión Gestor</h1>
+
+  <div class="login-form">
+    <label for="usuario">Usuario</label>
+    <input #usuarioInput type="text" name="usuario" id="usuario" />
+
+    <label for="password">Password</label>
+    <input #passwordInput type="password" name="password" id="password" />
+
+    <!-- <input type="submit" value="Entrar" /> -->
+    <button
+      class="buttonForm"
+      (click)="loginGestor(usuarioInput, passwordInput)"
+    >
+      Entrar
+    </button>
+  </div>
+</main>
